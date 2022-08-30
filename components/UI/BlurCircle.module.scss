@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.Container {
+  position: absolute;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  background: $bg-light;
+  filter: blur(40px);
+  top: -18%;
+  right: -20%;
+  z-index: -9;
+}

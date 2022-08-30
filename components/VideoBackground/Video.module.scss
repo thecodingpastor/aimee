@@ -1,0 +1,62 @@
+@import "../../styles/variables.scss";
+
+.Container {
+  z-index: -1;
+  top: 0;
+
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin-bottom: -0.8rem;
+  }
+
+  .Overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+
+    .ImageContainer {
+      background-color: rgba(white, 0.7);
+      padding: 2rem;
+      border-radius: 2rem;
+      max-width: 40rem;
+
+      @media screen and (max-width: 500px) {
+        max-width: 30rem;
+      }
+    }
+
+    .OtherContainer {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .Specialty {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+
+      strong {
+        padding: 0.5rem;
+        color: $color-pry-light;
+        background: linear-gradient(45deg, rgb(135, 17, 135), transparent);
+        // background: linear-gradient(45deg, $color-pry-light, transparent);
+        color: white;
+        border-radius: 1rem;
+      }
+    }
+  }
+}

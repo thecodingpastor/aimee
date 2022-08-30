@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Ubuntu:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Italiana&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  word-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-family: "Italiana", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.funky {
+  font-family: "Eagle Lake", cursive;
+}
+
+.team-member {
+  color: $color-pry;
+}
+
+.flex {
+  display: flex;
+}
+
+.v-center {
+  align-items: center;
+}
+
+.h-center {
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.head {
+  border-bottom: 4px double $color-pry-light;
+  display: inline-block;
+  margin-left: 2rem;
+  text-align: center;
+  color: $color-pry-light;
+  margin: 2rem 0;
+
+  @media screen and (max-width: 600px) {
+    border: none;
+    font-size: 200%;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-pry {
+  color: $color-pry;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.fade {
+  animation: FadeIn 300ms ease-in forwards;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+  &-track {
+    background-color: $bg-light;
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+
+  &-thumb {
+    background-color: $color-pry-light;
+    border-radius: 1rem;
+    border: 0.3rem solid $bg-light;
+
+    &:hover {
+      background-color: $color-pry-light;
+    }
+  }
+}

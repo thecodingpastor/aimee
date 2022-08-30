@@ -1,0 +1,126 @@
+@import "../../styles/variables.scss";
+
+.Container {
+  text-align: justify;
+
+  .Text {
+    padding: 2rem;
+  }
+
+  .SoftAndHard {
+    display: flex;
+    gap: 1rem;
+
+    @media screen and (max-width: 820px) {
+      flex-direction: column;
+    }
+
+    .Left,
+    .Right {
+      transform: translateY(10rem);
+      opacity: 0;
+      transition: $transition;
+      animation-fill-mode: forwards;
+
+      &.Slide {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      h2 {
+        background: linear-gradient(45deg, $color-pry, $color-pry-light);
+        color: white;
+        border-radius: 2rem 2rem 0 0;
+        padding: 1rem 0;
+      }
+      margin-top: 2rem;
+      flex: 1;
+      min-height: 30rem;
+      box-shadow: 0px 1px 5px rgba($color-pry, 0.7);
+      border-radius: 2rem;
+
+      @media screen and (max-width: 820px) {
+        min-height: auto;
+      }
+    }
+
+    .Soft,
+    .Hard {
+      margin-top: 2rem;
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+
+      p {
+        display: inline-block;
+        margin: 1rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-weight: bold;
+        background: -webkit-linear-gradient($color-pry, $color-pry-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        box-shadow: $color-shadow;
+      }
+    }
+  }
+
+  .Scope {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      font-weight: bold;
+      background: -webkit-linear-gradient($color-pry, $color-pry-light);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      box-shadow: $color-shadow;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .StandOut {
+    margin: 3rem 20rem;
+    text-align: center;
+
+    @media screen and (max-width: 950px) {
+      margin: 3rem 10rem;
+    }
+    @media screen and (max-width: 780px) {
+      margin: 3rem 5rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      margin: 3rem 2rem;
+    }
+
+    h1 {
+      background: linear-gradient(45deg, $color-pry, $color-pry-light);
+      color: white;
+      border-radius: 2rem 2rem 0 0;
+    }
+
+    p {
+      font-family: "Eagle Lake", cursive;
+      border: 3px solid $color-pry-light;
+      border-top: none;
+      padding: 1rem;
+    }
+  }
+}
+
+.Blur {
+  top: -10%;
+}

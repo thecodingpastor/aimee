@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.Container {
+  position: relative;
+
+  .ImageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, $color-pry-light, transparent);
+    max-width: 25rem;
+    border-radius: 2rem;
+
+    @media screen and (max-width: 650px) {
+      max-width: 20rem;
+    }
+
+    img {
+      border-radius: 2rem;
+      transition: $transition;
+
+      &:hover {
+        transform: rotate(0);
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.Container {
+  width: 40rem;
+  top: 3rem;
+  right: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, $color-pry-light, $color-pry);
+  border: 0.2rem solid white;
+  z-index: 50;
+  position: fixed;
+  color: white;
+  box-shadow: $color-shadow;
+  text-align: justify;
+
+  span {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+    color: red;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+
+  &.Error {
+    background: $color-danger;
+    border: 0.2rem solid whitesmoke;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .Inner {
+    position: relative;
+
+    svg {
+      position: absolute;
+      right: -0.2rem;
+      top: -0.2rem;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+  }
+}

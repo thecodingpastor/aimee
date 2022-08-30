@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.Container {
+  position: relative;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  gap: 1rem;
+
+  @media screen and (max-width: 750px) {
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    gap: 0.1rem;
+    padding: 1rem;
+    font-size: 90%;
+  }
+
+  .Logo {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+
+    @media screen and (max-width: 500px) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1rem;
+    }
+  }
+}

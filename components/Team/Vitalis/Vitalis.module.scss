@@ -1,0 +1,59 @@
+@import "../../../styles/variables.scss";
+
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  margin: 3rem 0;
+  color: $color-pry;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .First {
+    flex: 5;
+    display: grid;
+    place-items: center;
+
+    transition: all 1000ms;
+    opacity: 0;
+
+    &.Animate {
+      opacity: 1;
+
+      img {
+        transform: rotate(10deg);
+        animation-delay: 300ms;
+
+        &:hover {
+          transform: rotate(0);
+        }
+      }
+    }
+  }
+
+  .Second {
+    flex: 7;
+    transform: scale(0.9);
+    transition: $transition;
+
+    @media screen and (max-width: 900px) {
+      line-height: 1.4;
+    }
+
+    &.Scale {
+      transform: scale(1);
+    }
+  }
+}
+
+.Blur {
+  left: -65%;
+
+  @media screen and (max-width: 600px) {
+    left: -20%;
+  }
+}
