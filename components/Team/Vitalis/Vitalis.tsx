@@ -17,14 +17,14 @@ const Vitalis: React.FC = () => {
         <SplitCard
           src="./images/vitalis.png"
           alt="Anieze Vitalis"
-          classname={classes.Blur}
+          // classname={classes.Blur}
         />
       </div>
       <div
         className={`${classes.Second} ${onScreen2 ? classes.Scale : ""}`}
         ref={ref2}
       >
-        <span className="funky">Vitalis Anieze</span> is a Stockbroker and a
+        <h3 className="team-member">Vitalis Anieze</h3> is a Stockbroker and a
         professional accountant with expertise in strategic financial
         management, corporate reporting, treasury management, re-structuring,
         recapitalization, investment banking, taxation, budgeting and budgetary

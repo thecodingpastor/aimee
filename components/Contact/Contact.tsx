@@ -5,10 +5,10 @@ import emailjs from "@emailjs/browser";
 import Input from "../Form/Input";
 import Button from "../Form/Button";
 import Spin from "../UI/Spin";
-import BlurCircle from "../UI/BlurCircle";
 
 import classes from "./Contact.module.scss";
 import Toast from "../UI/Alert";
+import Parallax from "../Parallax/Parallax";
 
 const Contact: React.FC = () => {
   const [Alert, setAlert] = useState({
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div id="contact" className={classes.Container}>
+    <div className={classes.Container}>
       {Alert.message && (
         <Toast
           message={Alert.message}
@@ -78,63 +78,65 @@ const Contact: React.FC = () => {
           close={() => setAlert({ message: "", type: "" })}
         />
       )}
-      <div style={{ textAlign: "right" }}>
-        <h1 className="head">We'd love to hear from you!</h1>
-      </div>
-      <div className={classes.Contact}>
-        <form onSubmit={onSubmit} className={classes.ContactForm}>
-          <h4 className="text-center team-member funky">
-            We will get back to you between 2 - 48 hours
-          </h4>
-          <Input
-            name="FullName"
-            id="FullName"
-            placeholder="Your Full Name"
-            required
-            border
-            onChange={handleChange}
-            value={Values.FullName}
-            label="Full Name: 3 or more characters"
-          />
-          <Input
-            type="email"
-            name="Email"
-            id="Email"
-            required
-            placeholder="Email"
-            border
-            onChange={handleChange}
-            value={Values.Email}
-            label="Email: Must be a valid email"
-          />
-          <Input
-            element="textarea"
-            name="Message"
-            placeholder="Your message"
-            border
-            value={Values.Message}
-            onChange={handleChange}
-            label="Message: 5 or more characters"
-          />
-          {Valid ? (
-            <div className="flex-center">
-              {!Loading ? (
-                <Button text="Send Message" type="submit" fade />
-              ) : (
-                <Spin />
-              )}
-            </div>
-          ) : (
-            <div className="flex-center">
-              <p className={`${classes.Text} fade`}>
-                Fill form to see submit button
-              </p>
-            </div>
-          )}
-        </form>
-        <div className={classes.ContactImage}>
-          <BlurCircle classname={classes.Blur} />
-          <img src="./images/customer-service.png" alt="contact-image" />
+      <Parallax img="./images/bg1.jpeg" />
+      <div style={{ backgroundColor: "white" }} id="contact">
+        <div style={{ textAlign: "right" }}>
+          <h1 className="head">We'd love to hear from you!</h1>
+        </div>
+        <div className={classes.Contact}>
+          <form onSubmit={onSubmit} className={classes.ContactForm}>
+            <h4 className="text-center text-pry">
+              We will get back to you between 2 - 48 hours
+            </h4>
+            <Input
+              name="FullName"
+              id="FullName"
+              placeholder="Your Full Name"
+              required
+              border
+              onChange={handleChange}
+              value={Values.FullName}
+              label="Full Name: 3 or more characters"
+            />
+            <Input
+              type="email"
+              name="Email"
+              id="Email"
+              required
+              placeholder="Email"
+              border
+              onChange={handleChange}
+              value={Values.Email}
+              label="Email: Must be a valid email"
+            />
+            <Input
+              element="textarea"
+              name="Message"
+              placeholder="Your message"
+              border
+              value={Values.Message}
+              onChange={handleChange}
+              label="Message: 5 or more characters"
+            />
+            {Valid ? (
+              <div className="flex-center">
+                {!Loading ? (
+                  <Button text="Send Message" type="submit" fade />
+                ) : (
+                  <Spin />
+                )}
+              </div>
+            ) : (
+              <div className="flex-center">
+                <p className={`${classes.Text} fade`}>
+                  Fill form to see submit button
+                </p>
+              </div>
+            )}
+          </form>
+          <div className={classes.ContactImage}>
+            <img src="./images/customer-service.png" alt="contact-image" />
+          </div>
         </div>
       </div>
     </div>

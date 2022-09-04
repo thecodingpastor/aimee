@@ -3,6 +3,7 @@
 .Container {
   z-index: -1;
   top: 0;
+  overflow-x: hidden;
 
   video {
     width: 100vw;

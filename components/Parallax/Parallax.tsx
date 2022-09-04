@@ -1,15 +1,11 @@
+import classes from "./Parallax.module.scss";
+
 const Parallax: React.FC<{ img: string }> = ({ img }) => {
   return (
     <div
+      className={classes.Parallax}
       style={{
         backgroundImage: `url(${img})`,
-        minHeight: "70vh",
-        backgroundAttachment: "fixed",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        margin: "0 -5rem",
-        overflow: "hidden",
       }}
     ></div>
   );

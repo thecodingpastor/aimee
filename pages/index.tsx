@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -12,8 +13,17 @@ import OurServices from "../components/OurServices/OurServices";
 import Core from "../components/Core/Core";
 
 import classes from "./Index.module.scss";
+import PageLoading from "../components/UI/PageLoading";
 
 const Home: NextPage = () => {
+  const [Loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -24,6 +34,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/images/logo2.jpg" />
       </Head>
+      {Loading && <PageLoading />}
       <Video />
       <Header />
       <main className={classes.MainContainer}>

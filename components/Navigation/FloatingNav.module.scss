@@ -6,13 +6,16 @@
   bottom: 10%;
 
   display: flex;
-  color: white;
+  // color: white;
+  color: $color-pry;
   // justify-content: space-around;
-  flex-direction: column;
-  padding: 0.5rem;
-  // padding: 0.7rem 1.7rem;
-  // bottom: 2.5rem;
-  background-color: rgba(0, 0, 0, 0.4);
+  // flex-direction: column;
+  // padding: 0.5rem;
+  padding: 0.7rem 1.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.5rem;
+  background-color: rgba($bg-light, 0.6);
   border-radius: 3rem;
   width: max-content;
 
@@ -21,7 +24,8 @@
   gap: 0.5rem;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.9);
+    // background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba($bg-light, 0.9);
   }
 
   svg {
@@ -33,9 +37,11 @@
 
     &.Active {
       background: linear-gradient(90deg, $color-pry, $color-pry-light);
+      color: white;
     }
 
     &:hover {
+      color: white;
       background: linear-gradient(90deg, $color-pry, $color-pry-light);
     }
   }

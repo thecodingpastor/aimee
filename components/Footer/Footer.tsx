@@ -6,8 +6,14 @@ const Footer = () => {
   return (
     <div className={classes.Container}>
       <FooterImage />
-      <img src="/images/logo2.jpg" className={classes.Logo} /> Aimeé Property
-      Services | <p>Copyrights &copy; {new Date().getFullYear()}</p>
+      <div className={classes.Logo}>
+        {/* <img src="/images/logo2.jpg" className={classes.Logo} /> */}
+        <img src="/images/footer-logo.png" />
+        <span>
+          Copyrights &copy; {new Date().getFullYear()}
+          {/* aimeé Property Services | Copyrights &copy; {new Date().getFullYear()} */}
+        </span>
+      </div>
     </div>
   );
 };

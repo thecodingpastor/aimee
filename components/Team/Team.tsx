@@ -6,12 +6,14 @@ import Vitalis from "./Vitalis/Vitalis";
 const About = () => {
   return (
     <div>
+      <Parallax img="./images/bg3.jpg" />
       <div id="about"></div>
-      <h1 className="head">Our Team</h1>
-      <Iheoma />
-      <Prof />
-      <Vitalis />
-      <Parallax img="./images/pool.jpeg" />
+      <div style={{ backgroundColor: "white", paddingBottom: "2rem" }}>
+        <h1 className="head">Our Team</h1>
+        <Iheoma />
+        <Prof />
+        <Vitalis />
+      </div>
     </div>
   );
 };

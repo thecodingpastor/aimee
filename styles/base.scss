@@ -42,7 +42,7 @@ body {
   line-height: 1.7;
   font-size: 1.6rem;
   background-color: white;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 img {
@@ -55,7 +55,7 @@ img {
 }
 
 .team-member {
-  color: $color-pry;
+  display: inline;
 }
 
 .flex {

@@ -17,9 +17,9 @@ const OurServices: React.FC = () => {
         <h1 className="head">Our Services</h1>
       </div>
       <div>
-        <h2 className="funky text-center text-pry">Facilities Management</h2>
+        <h2 className="text-center text-pry">Facilities Management</h2>
         <div className={classes.Text}>
-          Our Facilities management services provide a wholistic approach to
+          Our Facilities management services provide a holistic approach to
           quality and cost-effective support services to our clients – both
           individuals and corporations. Scope of Services under facilities
           management include the following:
@@ -57,52 +57,53 @@ const OurServices: React.FC = () => {
         </div>
         <Parallax img="./images/bg2.jpg" />
 
-        <h2
-          className="funky text-center text-pry"
-          style={{ marginTop: "2rem" }}
+        <div
+          style={{
+            backgroundColor: "white",
+          }}
         >
-          Property Management
-        </h2>
-        <div>
-          Aimee Property Services offers full property management services on
-          different property types namely; retail, commercial and residential.
-          Our approach adopts a proactive strategy to unlock the latent and
-          sustainable values of our clients’ properties. Scope of Services under
-          property management include the following:
-          <div className={classes.Scope}>
-            <p>Operational Management</p>
-            <p>Client Reporting and Meetings</p>
-            <p>Tenant Liaison and Administration</p>
-            <p>Lease Management and Administration</p>
-            <p>General Building Maintenance Management</p>
-            <p>Property Accounting, Financial Reporting and Administration</p>
+          <h2 className="text-center text-pry" style={{ marginTop: "2rem" }}>
+            Property Management
+          </h2>
+          <div>
+            Aimee Property Services offers full property management services on
+            different property types namely; retail, commercial and residential.
+            Our approach adopts a proactive strategy to unlock the latent and
+            sustainable values of our clients’ properties. Scope of Services
+            under property management include the following:
+            <div className={classes.Scope}>
+              <p>Operational Management</p>
+              <p>Client Reporting and Meetings</p>
+              <p>Tenant Liaison and Administration</p>
+              <p>Lease Management and Administration</p>
+              <p>General Building Maintenance Management</p>
+              <p>Property Accounting, Financial Reporting and Administration</p>
+            </div>
+          </div>
+
+          <h2 className="text-center text-pry" style={{ marginTop: "2rem" }}>
+            Property Letting And Sales
+          </h2>
+          <p className="mt-2">
+            Given our knowledge of the property market, coupled with our network
+            of agents, we are strategically positioned to assist our clients in
+            acquiring or disposing their properties. Our letting and sales
+            strategy are property specific as we ensure clients’ satisfaction
+            via cutting edge innovations.
+          </p>
+
+          <div className={classes.StandOut}>
+            <h1 className="text-center">Why We Stand Out</h1>
+            <p>Well established and enduring track record</p>
+            <p>
+              Best of Breed Systems, Processes and Procedures (IFMA & RICS
+              standard)
+            </p>
+            <p>Full-service offering</p>
+            <p>Transparent processes and procedures</p>
           </div>
         </div>
-
-        <h2
-          className="funky text-center text-pry"
-          style={{ marginTop: "2rem" }}
-        >
-          Property Letting & Sales
-        </h2>
-        <p className="mt-2">
-          Given our knowledge of the property market, coupled with our network
-          of agents, we are strategically positioned to assist our clients in
-          acquiring or disposing their properties. Our letting and sales
-          strategy are property specific as we ensure clients’ satisfaction via
-          cutting edge innovations.
-        </p>
       </div>
-      <div className={classes.StandOut}>
-        <h1 className="text-center">Why We Stand Out</h1>
-        <p>Well established and enduring track record</p>
-        <p>
-          Best of Breed Systems, Processes and Procedures (IFMA & RICS standard)
-        </p>
-        <p>Full-service offering</p>
-        <p>Transparent processes and procedures</p>
-      </div>
-      <Parallax img="./images/bg1.jpeg" />
     </div>
   );
 };

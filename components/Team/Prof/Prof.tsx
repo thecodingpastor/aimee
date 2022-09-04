@@ -14,7 +14,7 @@ const Prof: React.FC = () => {
         className={`${classes.Second} ${onScreen2 ? classes.Scale : ""}`}
         ref={ref2}
       >
-        <span className="funky">Prof. A.C. Otegulu</span> is the Chairman of
+        <h3 className="team-member">Prof. A.C. Otegulu</h3> is the Chairman of
         Research Advisory Board of Aimee Property Services. One time head of
         Department, Department of Estate Management. He obtained Bachelor of
         Science degree in Estate Management from the University of Nigeria, MSc
@@ -42,7 +42,7 @@ const Prof: React.FC = () => {
         <SplitCard
           src="./images/prof.png"
           alt="Prof. A.C. Otegulu"
-          classname={classes.Blur}
+          // classname={classes.Blur}
         />
       </div>
     </div>

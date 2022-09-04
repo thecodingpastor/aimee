@@ -9,7 +9,7 @@
   text-align: center;
   padding: 2rem;
   font-weight: bold;
-  gap: 1rem;
+  min-height: 15rem;
 
   @media screen and (max-width: 750px) {
     padding: 1rem;
@@ -22,15 +22,20 @@
   }
 
   .Logo {
-    display: inline-block;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    padding: 0 2rem;
 
-    @media screen and (max-width: 500px) {
-      width: 3rem;
-      height: 3rem;
-      margin-right: 1rem;
+    img {
+      background-color: white;
+      width: 10rem;
+      padding: 0.2rem 1rem;
+      border-radius: 1rem;
+      margin-right: auto;
     }
   }
 }

@@ -6,8 +6,8 @@
   height: 40rem;
   border-radius: 50%;
   background: $bg-light;
-  filter: blur(40px);
+  filter: blur(50px);
   top: -18%;
   right: -20%;
-  z-index: -9;
+  // z-index: -1;
 }

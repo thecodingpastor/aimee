@@ -1,0 +1,95 @@
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
+
+// html,
+// body {
+//   min-height: 300%;
+//   width: 100%;
+//   font-family: "Open sans", sans-serif;
+//   font-size: 22px;
+//   line-spacing: 44px;
+//   margin: 0;
+//   padding: 0;
+//   position: relative;
+//   z-index: 0;
+// }
+
+// div.parallax-image* {
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   background-size: cover;
+//   top: 0;
+// }
+
+// div.parallax-image1 {
+//   background-image: url(https://source.unsplash.com/random/2200x1200/?mountains);
+// }
+
+// div.parallax-image2 {
+//   background-image: url(https://source.unsplash.com/random/2300x1201/?cliff);
+// }
+
+// div.parallax-image3 {
+//   background-image: url(https://source.unsplash.com/random/2401x1200/?rocks);
+// }
+
+// div.parallax-image4 {
+//   background-image: url(https://source.unsplash.com/random/2001x1201/?hills);
+// }
+
+.sticky {
+  margin-top: -100vh;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, red, blue);
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
+div.section-header {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+div.header-text {
+  height: auto;
+  padding: 0px 20px;
+  padding-left: calc(20vw - 70px);
+  margin-bottom: 40px;
+  color: white;
+  background: rgba(16, 32, 48, 0.5);
+}
+
+div.section {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3em calc(20vw - 70px);
+  z-index: 1;
+}
+
+div.section:last-child {
+  min-height: 50vh;
+  padding: 3em calc(20vw - 70px) 6em;
+}
+
+div.section.dark {
+  background-color: #102030;
+  color: white;
+}
+
+.page-title > div > h1 {
+  font-size: 80px;
+}

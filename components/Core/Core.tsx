@@ -15,7 +15,7 @@ const Core = () => {
           ref={ref}
           className={`${classes.Left} ${onScreen ? classes.ScrollRight : ""}`}
         >
-          <h2 className="funky">Professionalism</h2>
+          <h2>Professionalism</h2>
           <p>
             We respect our clients and do our work holding on to the highest
             level of ethics.
@@ -25,7 +25,7 @@ const Core = () => {
           ref={ref2}
           className={`${classes.Right} ${onScreen2 ? classes.ScrollLeft : ""}`}
         >
-          <h2 className="funky">Excellence</h2>
+          <h2>Excellence</h2>
           <p>
             We ensure we get it right the first time, then we improve every
             other time because we want to be the best.
