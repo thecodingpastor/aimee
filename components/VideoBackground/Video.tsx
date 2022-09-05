@@ -1,22 +1,6 @@
 import classes from "./Video.module.scss";
 
 const Video = () => {
-  // let isIOS = /iPad|iPhone|iPod/.test(window.navigator.platform);
-
-  // if (!isIOS) {
-  //   var canvasVideo = new CanvasVideoPlayer({
-  //     videoSelector: ".video",
-  //     canvasSelector: ".canvas",
-  //     timelineSelector: false,
-  //     autoplay: true,
-  //     makeLoop: true,
-  //     pauseOnClick: false,
-  //     audio: false,
-  //   });
-
-  //   console.log(canvasVideo);
-  // }
-
   return (
     <div className={classes.Outer} id="home">
       <div className={classes.Container}>
@@ -39,7 +23,7 @@ const Video = () => {
             company in Nigeria.
           </div>
         </div>
-        <video className={classes.Video} autoPlay loop muted>
+        <video className={classes.Video} autoPlay loop muted playsInline>
           <source src="aimee.mp4" type="video/mp4" />
         </video>
       </div>
