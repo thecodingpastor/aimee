@@ -80,10 +80,13 @@
       padding: 0.5rem;
       border-radius: 1rem;
       font-weight: bold;
-      background: -webkit-linear-gradient($color-pry, $color-pry-light);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      // background: -webkit-linear-gradient($color-pry, $color-pry-light);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      color: darken(rgb(39, 36, 36), 20%);
+      border: 2px solid $color-pry-light;
       box-shadow: $color-shadow;
+      // text-shadow: 0 0 5px black;
 
       span {
         display: none;
