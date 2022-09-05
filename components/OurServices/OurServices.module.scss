@@ -48,41 +48,21 @@
 
     .Soft,
     .Hard {
-      // margin-top: 2rem;
       flex: 1;
       justify-content: center;
       display: flex;
       flex-wrap: wrap;
       text-align: center;
-      // background: $bg-light;
-      // background-color: rgba(0, 0, 0, 0.5);
       border-radius: 0 0 2rem 2rem;
 
       p {
         display: inline-block;
         margin: 1rem;
         padding: 0.5rem;
-        border-radius: 1rem;
         font-weight: bold;
-        // background: -webkit-linear-gradient($color-pry, $color-pry-light);
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
-        // box-shadow: $color-shadow;
-
-        // lighten($color-pry-light, 30%),
-        background: linear-gradient(45deg, $bg-light, transparent);
-        // background: linear-gradient(45deg, $color-pry-light, transparent);
-        color: white;
-        color: darkgray;
-        color: $color-pry;
-        text-shadow: 0 0 5px darkgray;
         border-radius: 1rem;
         border: 2px solid $color-pry-light;
-
-        background: linear-gradient(45deg, $color-pry, $color-pry-light);
-        color: white;
-
-        background: linear-gradient(45deg, $bg-light, transparent);
+        background: linear-gradient(30deg, $bg-light, transparent);
         color: $color-pry;
       }
     }
@@ -101,14 +81,13 @@
       padding: 0.5rem;
       border-radius: 1rem;
       font-weight: bold;
-      // background: -webkit-linear-gradient($color-pry, $color-pry-light);
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
-      // box-shadow: $color-shadow;
-
       color: darken(rgb(39, 36, 36), 20%);
       border: 2px solid $color-pry-light;
       box-shadow: $color-shadow;
+
+      border: 2px solid $color-pry-light;
+      background: linear-gradient(30deg, $bg-light, transparent);
+      color: $color-pry;
 
       span {
         display: none;
