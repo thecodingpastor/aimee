@@ -38,6 +38,7 @@
   .Second {
     position: relative;
     flex: 7;
+    z-index: 3;
 
     transform: scale(0.9);
     transition: $transition;
