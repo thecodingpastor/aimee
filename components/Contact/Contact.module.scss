@@ -107,16 +107,8 @@
       p {
         font-size: 2.5rem;
         line-height: 1.2;
-        color: $color-pry;
         text-align: center;
-
-        background: -webkit-linear-gradient(
-          45deg,
-          $color-pry-light,
-          $color-pry
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: $color-pry;
 
         @media screen and (max-width: 830px) {
           font-size: 2rem;
