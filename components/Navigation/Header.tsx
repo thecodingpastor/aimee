@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       <nav>
         <div className={classes.Logo}>
           <Link href="/">
-            <img src="./images/logo.png" />
+            <img src="./images/logo.png" alt="Logo" />
           </Link>
         </div>
         <div className={classes.ReachOut}>

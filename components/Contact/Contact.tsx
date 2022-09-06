@@ -9,7 +9,6 @@ import Spin from "../UI/Spin";
 import Toast from "../UI/Alert";
 import Parallax from "../Parallax/Parallax";
 
-import { BsBuilding } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
 
 import classes from "./Contact.module.scss";
@@ -139,9 +138,7 @@ const Contact: React.FC = () => {
             )}
           </form>
           <div className={classes.ContactImage}>
-            {/* <img src="./images/customer-service.png" alt="contact-image" /> */}
             <IoLocationOutline />
-            {/* <BsBuilding /> */}
             <p>
               8, Providence Street, Opposite Halifield School, Lekki Phase 1,
               Lagos.

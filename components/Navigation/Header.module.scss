@@ -23,8 +23,10 @@
     }
 
     .Logo {
+      max-width: 12rem;
+
       img {
-        height: 6rem;
+        // height: 6rem;
         cursor: pointer;
       }
     }

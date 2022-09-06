@@ -3,8 +3,6 @@
 .Container {
   margin-top: 2rem;
   position: relative;
-  // z-index: 3;
-  // background-color: white;
 
   .Info {
     display: flex;
@@ -32,22 +30,17 @@
 
     .Left,
     .Right {
-      max-width: 40rem;
-      // opacity: 0.5;
-      max-height: 15em;
+      max-width: 35rem;
+      max-height: 15rem;
     }
 
     .Left {
-      // transform: translateX(-10%);
-
       &.ScrollRight {
         animation: SlideRight 500ms ease-in-out forwards;
       }
     }
 
     .Right {
-      // transform: translateX(10%);
-
       &.ScrollLeft {
         animation: SlideLeft 500ms ease-in-out forwards;
       }

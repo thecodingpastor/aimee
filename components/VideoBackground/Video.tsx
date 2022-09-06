@@ -3,7 +3,7 @@ import classes from "./Video.module.scss";
 const Video = () => {
   let background;
 
-  if (window.navigator.platform === "iPhone") {
+  if (typeof window !== "undefined" && window.navigator.platform === "iPhone") {
     background = <div className={classes.IphoneBackground}></div>;
   } else {
     background = (
