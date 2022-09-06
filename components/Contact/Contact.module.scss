@@ -29,12 +29,6 @@
     border-radius: 2rem;
     font-size: 90%;
   }
-  // .Text {
-  //   @media screen and (min-width: 960px) {
-  //     color: white;
-  //     text-shadow: 0 0 5px $color-pry;
-  //   }
-  // }
 
   .Contact {
     display: flex;
@@ -50,8 +44,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-
-      // @media screen and (max-width:)
     }
 
     button {
@@ -81,7 +73,6 @@
     .ContactForm {
       flex: 1;
       padding: 2rem;
-      // padding: 0 10rem;
 
       @media screen and (max-width: 400px) {
         padding: 1rem;
@@ -95,14 +86,42 @@
     .ContactImage {
       flex: 1;
       display: flex;
+      flex-direction: column;
+      gap: 2rem;
       justify-content: center;
       align-items: center;
       padding: 2rem;
-      position: relative;
 
-      img {
-        max-width: 38rem;
-        max-height: 38rem;
+      svg {
+        font-size: 15rem;
+        background: linear-gradient(45deg, $color-pry-light, $color-pry);
+        padding: 2rem;
+        color: $bg-light;
+        border-radius: 2rem;
+
+        @media screen and (max-width: 830px) {
+          font-size: 10rem;
+        }
+      }
+
+      p {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        color: $color-pry;
+        text-align: center;
+
+        background: -webkit-linear-gradient(
+          45deg,
+          $color-pry-light,
+          $color-pry
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: 830px) {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
       }
 
       @media screen and (max-width: 960px) {
