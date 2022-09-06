@@ -5,6 +5,16 @@
   top: 0;
   overflow-x: hidden;
 
+  .IphoneBackground {
+    background-image: url("../../public/images/real.jpg");
+    /* Full height */
+    height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   video {
     width: 100vw;
     height: 100vh;
@@ -53,7 +63,6 @@
       strong {
         padding: 0.5rem;
         background: linear-gradient(45deg, rgb(135, 17, 135), transparent);
-        // background: linear-gradient(45deg, $color-pry-light, transparent);
         color: white;
         border-radius: 1rem;
       }

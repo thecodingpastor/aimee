@@ -1,6 +1,18 @@
 import classes from "./Video.module.scss";
 
 const Video = () => {
+  let background;
+
+  if (window.navigator.platform === "iPhone") {
+    background = <div className={classes.IphoneBackground}></div>;
+  } else {
+    background = (
+      <video className={classes.Video} autoPlay loop muted playsInline>
+        <source src="aimee.mp4" type="video/mp4" />
+      </video>
+    );
+  }
+
   return (
     <div className={classes.Outer} id="home">
       <div className={classes.Container}>
@@ -23,9 +35,7 @@ const Video = () => {
             company in Nigeria.
           </div>
         </div>
-        <video className={classes.Video} autoPlay loop muted playsInline>
-          <source src="aimee.mp4" type="video/mp4" />
-        </video>
+        {background}
       </div>
     </div>
   );

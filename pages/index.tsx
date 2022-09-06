@@ -8,12 +8,20 @@ import Footer from "../components/Footer/Footer";
 import Header from "../components/Navigation/Header";
 import Team from "../components/Team/Team";
 import Contact from "../components/Contact/Contact";
-import Video from "../components/VideoBackground/Video";
+// import Video from "../components/VideoBackground/Video";
 import OurServices from "../components/OurServices/OurServices";
 import Core from "../components/Core/Core";
 
 import classes from "./Index.module.scss";
 import PageLoading from "../components/UI/PageLoading";
+import dynamic from "next/dynamic";
+
+const Video = dynamic(
+  () => {
+    return import("../components/VideoBackground/Video");
+  },
+  { ssr: false }
+);
 
 const Home: NextPage = () => {
   const [Loading, setLoading] = useState(true);
