@@ -24,8 +24,11 @@
 
     .Logo {
       max-width: 12rem;
-      border-radius: 1rem;
       cursor: pointer;
+
+      img {
+        border-radius: 1rem;
+      }
     }
 
     svg {
