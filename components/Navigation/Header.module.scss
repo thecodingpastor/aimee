@@ -23,8 +23,12 @@
     }
 
     .Logo {
-      max-width: 12rem;
+      max-width: 15rem;
       cursor: pointer;
+
+      @media screen and (max-width: 600px) {
+        max-width: 12rem;
+      }
 
       img {
         border-radius: 1rem;
