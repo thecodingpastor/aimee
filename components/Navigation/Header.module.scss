@@ -23,12 +23,11 @@
     }
 
     .Logo {
-      max-width: 12rem;
-
-      img {
-        // height: 6rem;
-        cursor: pointer;
-      }
+      max-width: 14rem;
+      background-color: $bg-light;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
     }
 
     svg {
