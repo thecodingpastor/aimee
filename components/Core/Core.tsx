@@ -17,7 +17,7 @@ const Core = () => {
         >
           <h2>Professionalism</h2>
           <p>
-            We respect our clients and do our work holding on to the highest
+            We respect our clients and do our work, holding on to the highest
             level of ethics.
           </p>
         </div>

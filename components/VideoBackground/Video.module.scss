@@ -38,13 +38,14 @@
 
     .ImageContainer {
       max-width: 40rem;
+      background-color: $bg-light;
+      opacity: 0.7;
+      border-radius: 2rem;
 
       img {
         display: block;
         padding: 2rem;
         border-radius: 2rem;
-        opacity: 0.7;
-        background-color: $bg-light;
       }
 
       @media screen and (max-width: 500px) {

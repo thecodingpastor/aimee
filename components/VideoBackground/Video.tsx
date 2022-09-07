@@ -27,7 +27,7 @@ const Video = () => {
               <strong>Facilities Management</strong>
               <strong>Property Management</strong>
               <strong>Property Sales and Letting</strong>
-              <strong>Real Estate Consultation/Advisory</strong>
+              <strong>Real Estate Consultancy/Advisory</strong>
             </div>
             The Company has been established with the passion to bringing real
             estate needs into reality through innovative and stress-free

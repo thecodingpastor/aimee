@@ -37,13 +37,13 @@ const Vitalis: React.FC = () => {
         finance and Accounts within an interval of 13 years. In 2022, he moved
         to Enugu state water corporation as Executive Director Finance and
         Accounts. He is a graduate of Accountancy, University of Lagos Nigeria.
-        He is a member a member of Institute of chartered Accountants of
-        Nigeria, an associate member of the chartered institute of stockbrokers
-        and an Authorized dealing clerk of the Nigerian Stock Exchange. He is
-        happily married with children. He enjoys intellectual engagements. He
-        currently serves as a financial advisor (non- executive) to Aimee
-        property services, where he provides, financial, tax, management
-        advisory services to the firm.
+        He is a member of Institute of chartered Accountants of Nigeria, an
+        associate member of the chartered institute of stockbrokers and an
+        Authorized dealing clerk of the Nigerian Stock Exchange. He is happily
+        married with children. He enjoys intellectual engagements. He currently
+        serves as a financial advisor (non- executive) to Aimee property
+        services, where he provides, financial, tax, management advisory
+        services to the firm.
       </div>
     </div>
   );

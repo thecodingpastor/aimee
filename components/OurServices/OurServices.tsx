@@ -87,7 +87,7 @@ const OurServices: React.FC = () => {
           <p className="mt-2">
             Given our knowledge of the property market, coupled with our network
             of agents, we are strategically positioned to assist our clients in
-            acquiring or disposing their properties. Our letting and sales
+            acquiring and disposing their properties. Our letting and sales
             strategy are property specific as we ensure clients’ satisfaction
             via cutting edge innovations.
           </p>
