@@ -3,11 +3,13 @@
 .Container {
   margin-top: 2rem;
   position: relative;
+  overflow-y: hidden;
 
   .Info {
     display: flex;
     justify-content: center;
     gap: 3rem;
+    padding: 1rem;
 
     @media screen and (max-width: 750px) {
       flex-direction: column;
